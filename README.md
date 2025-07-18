@@ -11,6 +11,11 @@ This project uses a stacking ensemble to classify emails as spam or not spam.
 -  Models saved with `joblib` for deployment
 -  Evaluation done using test set and cross-validation
 
+ Download Trained Models
+These files are over 25MB and cannot be hosted directly on GitHub.
+You can download them here: https://drive.google.com/drive/folders/1XuF7MoJdLVEyBvEujw9af9zMsxijkk9I?dmr=1&ec=wgc-drive-globalnav-goto
+
+
 ##  How to Predict on New Data
 
 ```python
