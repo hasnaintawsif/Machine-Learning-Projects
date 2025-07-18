@@ -1,17 +1,17 @@
 # Spam-email-detector
-# 📧 Spam Email Detection (Stacking Ensemble)
+#  Spam Email Detection (Stacking Ensemble)
 
 This project uses a stacking ensemble to classify emails as spam or not spam.
 
-## 💼 Key Highlights
+## Key Highlights
 
-- ✅ Achieved 95% test accuracy using stacked classifiers
-- 🤖 Models: Logistic Regression, SVM, KNN, Decision Tree, Random Forest, Extra Trees
-- 🔝 Meta-model: XGBoost
-- 💾 Models saved with `joblib` for deployment
-- 📊 Evaluation done using test set and cross-validation
+-  Achieved 95% test accuracy using stacked classifiers
+-  Models: Logistic Regression, SVM, KNN, Decision Tree, Random Forest, Extra Trees, Bagging, AdaBoosting, GradientBoosting, XGBoost.
+-  Meta-model: XGBoost
+-  Models saved with `joblib` for deployment
+-  Evaluation done using test set and cross-validation
 
-## 🚀 How to Predict on New Data
+##  How to Predict on New Data
 
 ```python
 import joblib
