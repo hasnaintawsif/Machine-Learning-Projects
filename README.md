@@ -4,8 +4,6 @@
 
 A bank aims to identify customers who are likely to leave (churn) based on their profile and activity data. Early detection enables targeted retention strategies, such as personalized offers or customer service outreach, to reduce churn and maintain revenue stability.
 
----
-
 ##  Project Overview
 
 This machine learning project develops a churn prediction system using structured customer data. The workflow includes:
@@ -18,8 +16,6 @@ This machine learning project develops a churn prediction system using structure
 
 Several models were evaluated, and the best results were obtained using **XGBoost** after hyperparameter optimization.
 
----
-
 ##  Final Model Performance – Tuned XGBoost
 
 | Metric    | Test Score |
@@ -29,9 +25,7 @@ Several models were evaluated, and the best results were obtained using **XGBoos
 | Precision | 0.9621     |
 | F1 Score  | 0.9677     |
 
----
-
-  Key Insight
+Key Insight
 
 The tuned XGBoost model achieves high overall accuracy and recall, making it highly effective at identifying customers who are likely to churn. This allows the bank to take timely preventive actions.
 
@@ -43,14 +37,12 @@ Here’s a polished and professional version of your **README** section for the 
 
 
 
-
+---
 # 📧 Spam Email Detection (Stacking Ensemble)
 
 ##  Project Objective
 
 This project builds a **spam email classifier** using a **stacking ensemble** approach to accurately detect whether an email is spam or not.
-
----
 
 ##  Key Highlights
 
@@ -78,8 +70,6 @@ This project builds a **spam email classifier** using a **stacking ensemble** ap
 The trained model files exceed GitHub’s size limit.
  Download from:
 [📁 Google Drive – Trained Models](https://drive.google.com/drive/folders/1XuF7MoJdLVEyBvEujw9af9zMsxijkk9I?dmr=1&ec=wgc-drive-globalnav-goto)
-
----
 
 ##  How to Predict on New Data
 
@@ -152,3 +142,37 @@ In this project, I performed customer segmentation using KMeans clustering on a 
 - The identification of a high-value older male segment offers opportunities for premium product engagement.
 
 - ---
+
+---
+
+# 🏠 House Price Prediction (kc\_house\_data)
+
+## 📌 Project Objective
+
+This project aims to predict house prices using various regression models trained on the **kc\_house\_data** dataset. The goal is to build a model that can make accurate price predictions for real estate in King County.
+
+---
+
+## ⚙️ Final Model: Stacking Regressor
+
+After experimenting with several regression algorithms—including Decision Tree, Random Forest, Extra Trees, XGBoost, and Gradient Boosting—a **Stacking Regressor** was selected as the final model. This ensemble technique combines the predictive power of multiple base models and a meta-model to enhance overall accuracy.
+
+## 📈 Performance on Test Data
+
+| Metric                             | Value    |
+| ---------------------------------- | -------- |
+| **R² Score**                       | 0.9979   |
+| **Mean Absolute Error (MAE)**      | \$7,600  |
+| **Root Mean Squared Error (RMSE)** | \$14,400 |
+
+## 📊 Interpretation
+
+* ✅ **R² Score of 0.9979** indicates that the model explains **nearly 99.8%** of the variance in house prices, showing an excellent fit.
+* 📉 **MAE of \$7,600** suggests that, on average, predictions deviate slightly from actual values—reasonable given the price range.
+* 📦 **RMSE of \$14,400** reflects occasional larger errors, but overall predictions are reliable and consistent.
+
+## ✅ Conclusion
+
+The **Stacking Regressor** provides a strong balance of **accuracy and generalization**, making it a practical solution for predicting house prices. For deployment in production or use in real estate applications, it's recommended to validate performance on **new or real-time data** to ensure consistent results.
+
+---
