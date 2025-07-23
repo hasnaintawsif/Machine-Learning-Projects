@@ -1,7 +1,3 @@
-Certainly! Here's a clean, professional, and impactful version of your **README** section, with a large headline and no personal commentary:
-
----
-
 # 🏦 Bank Customer Churn Prediction
 
 ##  Business Objective
@@ -112,3 +108,47 @@ predictions = meta_model.predict(blend)
 
 ---
 
+# 👥 Customer Segmentation Using KMeans Clustering
+
+## Overview / Objective
+
+In this project, I performed customer segmentation using KMeans clustering on a large transactional dataset containing over 1 million records with 5 key engineered features. The objective was to identify meaningful customer groups based on transaction behavior and demographics.
+
+## Data Preparation and Feature Engineering
+
+- Extracted **CustomerAge** by calculating the difference between the transaction date and the customer’s date of birth (DOB), converting it into an age feature to capture relevant demographic information.
+- Addressed skewness in financial variables by applying logarithmic transformations to **`CustAccountBalance`** and **`TransactionAmount (INR)`**, creating `LogBalance` and `LogTransactionAmount`.
+- Dropped the original `CustAccountBalance` and `TransactionAmount (INR)` columns to avoid redundancy and multicollinearity.
+- The final feature set for clustering included:  
+  - `TransactionTime`  
+  - `CustomerAge` (engineered from DOB and transaction date)  
+  - `CustGender_M`  
+  - `LogBalance`  
+  - `LogTransactionAmount`
+- Used StandardScaler to normalize features before clustering.
+
+## Clustering Methodology
+
+- Applied KMeans clustering on the full dataset (over 1 million rows).
+- Explored cluster counts (`k`) from 2 to 9 and selected the optimal number based on the **silhouette score**.
+- Used PCA for dimensionality reduction and visualization of cluster separation.
+
+## Key Findings
+
+- The silhouette score peaked at **k=2 (0.6076)**, indicating two distinct customer clusters.
+- At k=2, clusters were primarily divided by gender and financial behavior:  
+  - Cluster 0: Female customers with higher balances and larger transactions.  
+  - Cluster 1: Male customers with slightly lower balances and smaller transactions.
+- At k=3 (silhouette score 0.6070), an additional meaningful cluster emerged:  
+  - Cluster 0: Female customers, moderate balances and transactions.  
+  - Cluster 1: Younger male customers with lower balances and smaller transactions.  
+  - Cluster 2: Older male customers with the highest balances and transaction amounts.
+- PCA visualizations confirmed clear and meaningful cluster separation.
+
+## Business Insights
+
+- The segmentation reveals actionable customer groups for targeted marketing, personalized offerings, and loyalty programs.
+- Distinct age and gender segments provide deeper understanding of customer behavior patterns.
+- The identification of a high-value older male segment offers opportunities for premium product engagement.
+
+- ---
