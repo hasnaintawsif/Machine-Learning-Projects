@@ -63,8 +63,6 @@ This project builds a **spam email classifier** using a **stacking ensemble** ap
 *  Trained models saved with `joblib` for deployment
 *  Evaluated using test data and cross-validation
 
----
-
 ##  Download Trained Models
 
 The trained model files exceed GitHub’s size limit.
@@ -150,8 +148,6 @@ In this project, I performed customer segmentation using KMeans clustering on a 
 ## 📌 Project Objective
 
 This project aims to predict house prices using various regression models trained on the **kc\_house\_data** dataset. The goal is to build a model that can make accurate price predictions for real estate in King County.
-
----
 
 ## ⚙️ Final Model: Stacking Regressor
 
