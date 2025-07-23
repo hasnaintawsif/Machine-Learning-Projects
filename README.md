@@ -95,7 +95,7 @@ predictions = meta_model.predict(blend)
 ```
 
 ---
-
+---
 # 👥 Customer Segmentation Using KMeans Clustering
 
 ## Overview / Objective
@@ -170,5 +170,42 @@ After experimenting with several regression algorithms—including Decision Tree
 ## ✅ Conclusion
 
 The **Stacking Regressor** provides a strong balance of **accuracy and generalization**, making it a practical solution for predicting house prices. For deployment in production or use in real estate applications, it's recommended to validate performance on **new or real-time data** to ensure consistent results.
+
+---
+---
+
+# 🏠 House Price Prediction
+
+## 📌 Project Objective
+
+This project aims to build a machine learning model to accurately predict house prices using a structured housing dataset. Multiple regression models were tested to find the most reliable solution for practical use.
+
+
+## ✅ Final Model Selection: ExtraTreesRegressor
+
+After evaluating a range of regression models—including Decision Tree, Random Forest, Gradient Boosting, XGBoost, and Stacking Regressor—the **ExtraTreesRegressor** demonstrated the best performance.
+
+This model produced the **lowest prediction error** and a **reasonable R² score**, making it the most suitable choice for this task.
+
+
+## 📈 Performance Summary (on Test Data)
+
+| Metric                        | Value      |
+| ----------------------------- | ---------- |
+| **Mean Absolute Error (MAE)** | \$8,623.50 |
+| **R² Score**                  | **0.67**   |
+
+
+## 🧠 Interpretation
+
+* 🔍 **MAE of \$8,623.50** indicates low average deviation from actual house prices, showing strong real-world applicability.
+* 📉 **R² score of 0.67** means the model explains **67% of the variance** in house prices—showing moderate but reliable predictive ability.
+
+
+## 🚀 Conclusion
+
+The **ExtraTreesRegressor** offers a strong balance of **accuracy and stability**, outperforming other tested models in this project. While the R² score leaves room for improvement, the low MAE suggests it is effective for practical housing price predictions. Further improvement may be achieved through advanced feature engineering or additional data collection.
+
+---
 
 ---
